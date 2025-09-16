@@ -1,0 +1,53 @@
+    /*formnya*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom,#f1faee,#a8dadc
+        );
+    font-family: Arial, Helvetica, sans-serif;
+
+    }
+    /* box loginya*/
+.login-box{
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow:  0 4px 12px ;
+    width: auto;
+    text-align: center;
+}
+    /*input box*/
+.input-box input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: ipx solid #ccc;
+    border-radius: 8px;
+}
+    /*tombol login*/
+.btn{
+    width: 100%;
+    padding: 10px;
+    border: 10px;
+    color:  black;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    }
+.btn:hover{
+    background: #3a7b4c;
+    }   
+
+    /*buat  bentuk lupa passwordnya*/
+.forgot a{
+    margin-top: 15px;
+}
+    /*buat detail forgot password*/
+.forgot a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #f1b7f;
+}

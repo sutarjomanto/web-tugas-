@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(to right,#004d98,#a50044,white,white);
+    color: #333;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+
+}
+
+.header{
+    text-align: center;
+    padding: 25px;
+    background:rgba(0, 0,0,0,5);
+    color: white;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0,2);
+    margin-bottom: 40px;
+}
+.header h1{
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+        color: gold;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0,5);
+}
+header p {
+    font-style: 1.2rem;
+    max-width: 800px;
+    
+}
