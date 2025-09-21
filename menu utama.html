@@ -1,39 +1,773 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" 
-        content="widht=device-widht,initial-scale=1.0">
-        <link rel="stylesheet" href="menu utama.css">
-        <title>MENU UTAMA</title>
-    </head>
-    <BODY>
-        <header>
-            <h1> EL CLASICO </h1>
-            <P> BARCELONA VS MADRID </P>
-        </header>
-        <div class="elclasico-container">
-            <section class="team barca">
-                <a href="menu barca.html">
-                 <img src="barca1.jpeg" alt="FC BARCELONA" class="team-LOGO">
-                    <div class="info">
-                        <h2>fc BARCELONA</h2>
-                        <p>sejarah club </p>
-                    </div>
-                </a>
-            </section>
-            <sectionc class="middle">
-            <h2> vs </h2>
-            </section>
-            <section class="team MADRID">
-            <a href="menu madrid.html">
-                <img src="madrid.jpeg" alt=" real madrid class"team-LOGO">
-                <div class="info">
-                    <h2>real madrid</h2>
-                    <p>sejarah club</p>
-                </div> 
-            </a>
-             </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Clásico Rivalry - FC Barcelona vs Real Madrid</title>
+    <link rel="stylesheet" href="menu utama.css">
+</head>
+<body>
+    <header>
+        <h1>EL CLÁSICO</h1>
+        <p></p>
+    </header>
+
+    <div class="elclasico-container">
+        <div class="team barca">
+            <h2>FC Barcelona</h2>
+            <a href="menu barca.html"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/180px-FC_Barcelona_%28crest%29.svg.png" alt="Barcelona Logo" class="team-logo"></a>
+            <div class="info">
+                <h3>Club Info</h3>
+                <p>didirikan: 1899</p>
+                <p>Stadium: Camp Nou</p>
+                <p>sebutan : Blaugrana</p>
+            </div>
         </div>
-    </BODY>
-    </html>
-    
+
+        <div class="middle">
+            <h2> </h2>
+            <div class="vs-badge">VS</div>
+            <p> sebuah rivalitas yang diawali dari politik </p>
+            
+        </div>
+
+        <div class="team madrid">
+            <h2>Real Madrid</h2>
+            <a href="menu madrid.html"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/180px-Real_Madrid_CF.svg.png" alt="Real Madrid Logo" class="team-logo"></a>
+            <div class="info">
+                <h3>Club Info</h3>
+                <p>didirikan<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #004d98, #a50044, white, white);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: gold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .elclasico-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 80px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            flex-wrap: wrap;
+        }
+
+        .team {
+            position: relative;
+            width: 280px;
+            text-align: center;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-logo {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            border: 5px solid transparent;
+            border-radius: 50%;
+            transition: all 0.4s ease;
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .team h2 {
+            font-size: 2rem;
+            margin: 15px 0;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        .info {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 280px;
+            background: rgba(0, 0, 0, 0.92);
+            padding: 20px;
+            border-radius: 12px;
+            opacity: 0;
+            transition: all 0.4s ease;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            pointer-events: none;
+        }
+
+        .team:hover .team-logo {
+            border-color: gold;
+            transform: scale(1.1);
+        }
+
+        .team:hover .info {
+            opacity: 1;
+            bottom: -140px;
+        }
+
+        .barca {
+            background: linear-gradient(to bottom, #004d98, #a50044);
+            color: white;
+        }
+
+        .madrid {
+            background: linear-gradient(to bottom, #00529f, white);
+            color: #00529f;
+        }
+
+        .madrid h2 {
+            color: #00529f;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+        }
+
+        .middle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        .middle h2 {
+            font-size: 3.5rem;
+            color: gold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+            margin-bottom: 20px;
+        }
+
+        .middle p {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 400px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .vs-badge {
+            background: linear-gradient(135deg, #a50044, #004d98);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+
+        .history-section {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 1000px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .history-section h2 {
+            font-size: 2.5rem;
+            color: gold;
+            margin-bottom: 25px;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: gold;
+            margin: 10px 0;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        @media (max-width: 900px) {
+            .elclasico-container {
+                gap: 40px;
+            }
+            
+            .middle h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .elclasico-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .middle {
+                margin: 30px 0;
+            }
+        }
+    </style><style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #004d98, #a50044, white, white);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: gold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .elclasico-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 80px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            flex-wrap: wrap;
+        }
+
+        .team {
+            position: relative;
+            width: 280px;
+            text-align: center;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-logo {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            border: 5px solid transparent;
+            border-radius: 50%;
+            transition: all 0.4s ease;
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .team h2 {
+            font-size: 2rem;
+            margin: 15px 0;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        .info {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 280px;
+            background: rgba(0, 0, 0, 0.92);
+            padding: 20px;
+            border-radius: 12px;
+            opacity: 0;
+            transition: all 0.4s ease;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            pointer-events: none;
+        }
+
+        .team:hover .team-logo {
+            border-color: gold;
+            transform: scale(1.1);
+        }
+
+        .team:hover .info {
+            opacity: 1;
+            bottom: -140px;
+        }
+
+        .barca {
+            background: linear-gradient(to bottom, #004d98, #a50044);
+            color: white;
+        }
+
+        .madrid {
+            background: linear-gradient(to bottom, #00529f, white);
+            color: #00529f;
+        }
+
+        .madrid h2 {
+            color: #00529f;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+        }
+
+        .middle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        .middle h2 {
+            font-size: 3.5rem;
+            color: gold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+            margin-bottom: 20px;
+        }
+
+        .middle p {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 400px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .vs-badge {
+            background: linear-gradient(135deg, #a50044, #004d98);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+
+        .history-section {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 1000px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .history-section h2 {
+            font-size: 2.5rem;
+            color: gold;
+            margin-bottom: 25px;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: gold;
+            margin: 10px 0;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        @media (max-width: 900px) {
+            .elclasico-container {
+                gap: 40px;
+            }
+            
+            .middle h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .elclasico-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .middle {
+                margin: 30px 0;
+            }
+        }
+    </style><style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #004d98, #a50044, white, white);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: gold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .elclasico-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 80px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            flex-wrap: wrap;
+        }
+
+        .team {
+            position: relative;
+            width: 280px;
+            text-align: center;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-logo {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+            border: 5px solid transparent;
+            border-radius: 50%;
+            transition: all 0.4s ease;
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .team h2 {
+            font-size: 2rem;
+            margin: 15px 0;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        .info {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 280px;
+            background: rgba(0, 0, 0, 0.92);
+            padding: 20px;
+            border-radius: 12px;
+            opacity: 0;
+            transition: all 0.4s ease;
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            pointer-events: none;
+        }
+
+        .team:hover .team-logo {
+            border-color: gold;
+            transform: scale(1.1);
+        }
+
+        .team:hover .info {
+            opacity: 1;
+            bottom: -140px;
+        }
+
+        .barca {
+            background: linear-gradient(to bottom, #004d98, #a50044);
+            color: white;
+        }
+
+        .madrid {
+            background: linear-gradient(to bottom, #00529f, white);
+            color: #00529f;
+        }
+
+        .madrid h2 {
+            color: #00529f;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+        }
+
+        .middle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        .middle h2 {
+            font-size: 3.5rem;
+            color: gold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+            margin-bottom: 20px;
+        }
+
+        .middle p {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 400px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .vs-badge {
+            background: linear-gradient(135deg, #a50044, #004d98);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+
+        .history-section {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 1000px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .history-section h2 {
+            font-size: 2.5rem;
+            color: gold;
+            margin-bottom: 25px;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: gold;
+            margin: 10px 0;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        @media (max-width: 900px) {
+            .elclasico-container {
+                gap: 40px;
+            }
+            
+            .middle h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .elclasico-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .middle {
+                margin: 30px 0;
+            }
+        }
+    </style>: 1902</p>
+                <p>Stadium: Santiago Bernabéu</p>
+                <p>sebutan: los blancos</p>
